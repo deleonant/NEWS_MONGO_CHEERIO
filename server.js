@@ -45,7 +45,7 @@ app.get('/', function(req, res) {
 app.post('/submit', function(req, res){
 
 	//pulls info using request npm from website
-request('http://elitedaily.com/category/news/', function(err, res, body){
+request('http://bgr.com', function(err, res, body){
 	var $ = cheerio.load(body);
 	
 	//pulls all of the h2 values for the body of the site
